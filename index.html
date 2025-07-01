@@ -49,10 +49,10 @@
       transform: translateY(-12px) scale(1.03);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     }
-    nav button {
+    nav button, nav a {
       transition: all 0.3s ease;
     }
-    nav button:hover, nav button.active {
+    nav button:hover, nav button.active, nav a:hover {
       background-color: #ffffff30;
       transform: scale(1.15);
       border-radius: 8px;
@@ -100,7 +100,7 @@
   <section id="about" class="section max-w-6xl mx-auto px-6 py-16 scroll-anim">
     <h2 class="text-5xl font-bold text-center mb-8 animate__animated animate__fadeIn">About Me</h2>
     <p class="text-xl text-center mb-10 max-w-4xl mx-auto animate__animated animate__fadeInUp">
-      I'm Ayush Das, a driven Computer Science and Business Systems (CSBS) student at Techno Main Saltlake, with a passion for leveraging technology to solve real-world challenges. My journey in tech began with a curiosity for coding, which has evolved into hands-on expertise in Java, C, C++, Python, DBMS, and Web Development. I thrive on exploring cutting-edge fields like Machine Learning, Deep Learning, and Data Analysis, using tools like TensorFlow, NumPy, Pandas, and OpenCV. My projects, from building responsive web platforms to developing ML models for skin cancer and deepfake detection, reflect my commitment to impactful innovation. Beyond coding, I enjoy tackling complex problems, staying updated with tech trends, and collaborating on solutions that make a difference. I'm excited to continue growing, contributing to open-source communities, and creating technology that shapes a better future.
+      I'm Ayush Das, a driven Computer Science and Business Systems (CSBS) student at Techno Main Saltlake, with a passion for leveraging technology to solve real-world challenges. My journey in tech began with a curiosity for coding, which has evolved into hands-on expertise in Java, C, C++, Python, DBMS, and Web Development. I thrive on exploring cutting-edge fields like Machine Learning, Deep Learning, and Data Analysis, using tools like TensorFlow, NumPy, Pandas, and OpenCV. My projects, from building responsive web platforms to developing ML models for skin cancer and deepfake detection, reflect my commitment to impactful innovation.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="card bg-white text-black p-8 rounded-2xl animate__animated animate__fadeInLeft">
@@ -131,10 +131,12 @@
       <div class="card bg-white text-black p-8 rounded-2xl animate__animated animate__fadeInLeft">
         <h3 class="text-2xl font-semibold mb-3">Movie Ticket Booking Platform</h3>
         <p>Responsive website using HTML, CSS, JavaScript with showtime selection and mock payment.</p>
+        <a href="https://ayush-das-dhrubo.github.io/movie_planner/" target="_blank" class="text-pink-500 hover:text-pink-700 font-medium mt-3 inline-block">Visit Project</a>
       </div>
       <div class="card bg-white text-black p-8 rounded-2xl animate__animated animate__fadeInUp">
         <h3 class="text-2xl font-semibold mb-3">Skin Cancer Detection System</h3>
         <p>ML model using Python (TensorFlow) to classify skin cancer from medical images. Published research included.</p>
+        <a href="https://github.com/Ayush-Das-Dhrubo/skincancer" target="_blank" class="text-pink-500 hover:text-pink-700 font-medium mt-3 inline-block">View on GitHub</a>
       </div>
       <div class="card bg-white text-black p-8 rounded-2xl animate__animated animate__fadeInRight">
         <h3 class="text-2xl font-semibold mb-3">Deepfake Detection Using ML</h3>
