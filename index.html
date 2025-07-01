@@ -85,7 +85,7 @@
       <button onclick="showSection('about')" id="btn-about" class="active px-5 py-2 text-xl font-medium rounded-lg animate__animated animate__fadeInDown">About</button>
       <button onclick="showSection('projects')" id="btn-projects" class="px-5 py-2 text-xl font-medium rounded-lg animate__animated animate__fadeInDown animate__delay-1s">Projects</button>
       <button onclick="showSection('certificates')" id="btn-certificates" class="px-5 py-2 text-xl font-medium rounded-lg animate__animated animate__fadeInDown animate__delay-2s">Certificates</button>
-      <a href="https://drive.google.com/file/d/1h0jM2WyUJuwR30uWg0DdbHq2kqVuWiEG/view?usp=drive_link" target="_blank" class="px-5 py-2 text-xl font-medium rounded-lg animate__animated animate__fadeInDown animate__delay-3s hover:bg-white hover:text-black transition">Resume</a>
+      <a href="RESUME 2.0.pdf" target="_blank" class="px-5 py-2 text-xl font-medium rounded-lg animate__animated animate__fadeInDown animate__delay-3s hover:bg-white hover:text-black transition">Resume</a>
     </nav>
   </header>
 
@@ -152,24 +152,11 @@
     </ul>
   </section>
 
- <section id="Resume" class="section max-w-6xl mx-auto px-6 py-16 hidden scroll-anim">
-    <h2 class="text-5xl font-bold text-center mb-8 animate__animated animate__fadeIn">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="card bg-white text-black p-8 rounded-2xl animate__animated animate__fadeInLeft">
-        <h3 class="text-2xl font-semibold mb-3">Movie Ticket Booking Platform</h3>
-        <embed src="RESUME 2.0.pdf" type="Resume" width="100%" height="600px" />
-      </div>
-    </div>
-  </section>
-
-
-
   <footer class="text-center py-8 bg-black bg-opacity-60 backdrop-blur-lg">
     <p class="text-lg animate__animated animate__fadeIn">© 2025 Ayush Das. All rights reserved.</p>
   </footer>
 
   <script>
-    // Initialize Particles.js
     particlesJS('particles-js', {
       particles: {
         number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -187,7 +174,6 @@
       }
     });
 
-    // Section toggle with animation
     function showSection(section) {
       document.querySelectorAll('.section').forEach(s => {
         s.classList.add('hidden');
@@ -200,7 +186,6 @@
       document.getElementById('btn-' + section).classList.add('active');
     }
 
-    // Scroll animation observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
